@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency HotLine</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2/o2sO6i0G/y6Wz"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-    
+    <section>
+        <nav class="flex justify-between px-3 py-2 lg:px-8 lg:py-5">
+            <div class="flex gap-3 items-center">
+                <div>
+                    <img src="./assets/logo.png" alt="" class="max-w-[20px] max-h-[20px] lg:max-w-[50px] lg:max-h-[50px]">
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-[#006747] lg:text-4xl">Emergency<br>
+                    Service</h1>
+                </div>
+            </div>
+            <div class="flex gap-4 lg:gap-8">
+                <div class="flex gap-2 rounded-full bg-[#41ff6b1a] p-2 items-center w-[80px] lg:w-[140px] justify-center">
+                    <div class="font-black text-lg">0</div>
+                    <div><img src="./assets/heart.png" alt="" class="max-w-[20px] max-h-[20px] lg:max-w-[30px] lg:max-h-[30px]"></div>
+                </div>
+                <div class="flex gap-2 rounded-full bg-[#41ff6b1a] p-2 items-center w-[80px] lg:w-[140px] justify-center">
+                    <div class="font-black text-lg">100</div>
+                    <div><img src="./assets/coin.png" alt="" class="max-w-[16px] max-h-[16px] lg:max-w-[24px] lg:max-h-[24px]"></div>
+                </div>
+                <div class="font-inter flex gap-2 font-bold rounded-full bg-[#00a63e] px-2 py-1 items-center w-[80px] text-[#ffffff] lg:w-[140px] justify-center  ">
+                    <p class="font-black text-xl">0</p>
+                    <p class="text-xl">Copy</p>
+                </div>
+            </div>
+        </nav>
+    </section>
 </body>
 </html>
