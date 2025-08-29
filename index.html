@@ -38,7 +38,8 @@
                     <div><img src="./assets/coin.png" alt="" class="max-w-[16px] max-h-[16px] lg:max-w-[24px] lg:max-h-[24px]"></div>
                 </div>
                 <div class="font-inter flex gap-2 font-bold rounded-full bg-[#00a63e] px-2 py-1 items-center w-[80px] text-[#ffffff] lg:w-[140px] justify-center  ">
-                    <p class="font-black text-xl">0</p>
+                    <p  class="font-black text-xl">
+                        <span id="copy-count">0</span></p>
                     <p class="text-xl">Copy</p>
                 </div>
             </div>
@@ -56,28 +57,35 @@
      <section class="card-all bg-[#f5fff6]">
   <div class="grid grid-cols-2 gap-3 h-screen p-3 lg:grid-cols-4 lg:gap-8 lg:p-10">
     <div class="col-span-1 grid grid-cols-1 gap-4 lg:col-span-3 lg:grid-cols-3 ">
-      <div class="border border-gray-300 bg-white rounded-2xl lg:max-h-[370px] shadow-xl/20 ">
-        <div class="flex justify-between p-4">
-          <div>
-            <img src="./assets/ambulance.png" class="max-w-[32px] max-h-[32px]" alt="">
-          </div>
-          <div>
-            <p id="ambulance-heart" class="p-2 inline-block rounded-full bg-white">
-              <i class="fa-regular fa-heart text-gray-500"></i>
-            </p>
-          </div>
-        </div>
-        <div class="px-3">
-          <h1 class="font-bold text-3xl text-[#111111]">Emergency Ambulance</h1>
-          <p class="text-[#5c5c5c] font-normal text-lg">ambulance</p>
-          <h2 class="font-bold text-4xl text-[#111111] mt-3">999</h2>
-          <div class="inline-block bg-[#f2f2f2] px-4 py-2 rounded-full mt-5 font-normal text-base sm:text-lg lg:text-lg">nurse</div>
-        </div>
-        <div class="flex justify-between px-4 mt-7">
-          <button class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
-          <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
-        </div>
-      </div>
+    <div class="border border-gray-300 bg-white rounded-2xl lg:max-h-[370px] shadow-xl/20 ">
+  <div class="flex justify-between p-4">
+    <div>
+      <img src="./assets/ambulance.png" class="max-w-[32px] max-h-[32px]" alt="">
+    </div>
+    <div>
+      <p id="ambulance-heart" class="p-2 inline-block rounded-full bg-white">
+        <i class="fa-regular fa-heart text-gray-500"></i>
+      </p>
+    </div>
+  </div>
+  <div class="px-3">
+    <h1 class="font-bold text-3xl text-[#111111]">Emergency Ambulance</h1>
+    <p class="text-[#5c5c5c] font-normal text-lg">ambulance</p>
+
+    <h2 id="ambulance-number" class="font-bold text-4xl text-[#111111] mt-3">999</h2>
+
+    <div class="inline-block bg-[#f2f2f2] px-4 py-2 rounded-full mt-5 font-normal text-base sm:text-lg lg:text-lg">nurse</div>
+  </div>
+  <div class="flex justify-between px-4 mt-7">
+    <button id="copy-btn-ambulance" class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden">
+      <i class="fa-solid fa-copy"></i> Copy
+    </button>
+    <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden">
+      <i class="fa-solid fa-phone"></i> Call
+    </button>
+  </div>
+    </div>
+
 
       <div class="shadow-xl/20 border border-gray-300 bg-white rounded-2xl lg:max-h-[370px] ">
         <div class="flex justify-between p-4">
@@ -93,11 +101,11 @@
         <div class="px-3">
           <h1 class="font-bold text-3xl text-[#111111]">Emergency Service</h1>
           <p class="text-[#5c5c5c] font-normal text-lg">service</p>
-          <h2 class="font-bold text-4xl text-[#111111] mt-3">888</h2>
+          <h2 id="emergency-number" class="font-bold text-4xl text-[#111111] mt-3">888</h2>
           <div class="inline-block bg-[#f2f2f2] px-4 py-2 rounded-full mt-5 font-normal text-base sm:text-lg lg:text-lg">servant</div>
         </div>
         <div class="flex justify-between px-4 mt-7">
-          <button class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
+          <button id="copy-btn-emergency" class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
           <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
       </div>
@@ -115,11 +123,11 @@
         <div class="px-3">
           <h1 class="font-bold text-3xl text-[#111111]">Fire Service</h1>
           <p class="text-[#5c5c5c] font-normal text-lg">Fire</p>
-          <h2 class="font-bold text-4xl text-[#111111] mt-3">777</h2>
+          <h2 id="fire-service-number" class="font-bold text-4xl text-[#111111] mt-3">777</h2>
           <div class="inline-block bg-[#f2f2f2] px-4 py-2 rounded-full mt-5 font-normal text-base sm:text-lg lg:text-lg">Fighter</div>
         </div>
         <div class="flex justify-between px-4 mt-7">
-          <button class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
+          <button id="copy-btn-fire" class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
           <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
       </div>
@@ -137,11 +145,11 @@
         <div class="px-3">
           <h1 class="font-bold text-3xl text-[#111111]">Police</h1>
           <p class="text-[#5c5c5c] font-normal text-lg">Bribe-taker</p>
-          <h2 class="font-bold text-4xl text-[#111111] mt-3">111</h2>
+          <h2 id="police-number" class="font-bold text-4xl text-[#111111] mt-3">111</h2>
           <div class="inline-block bg-[#f2f2f2] px-4 py-2 rounded-full mt-5 font-normal text-base sm:text-lg lg:text-lg">police</div>
         </div>
         <div class="flex justify-between px-4 mt-7">
-          <button class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
+          <button id="copy-btn-police" class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
           <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
       </div>
@@ -157,13 +165,13 @@
           </div>
         </div>
         <div class="px-3">
-          <h1 class="font-bold text-3xl text-[#111111]">Health Care</h1>
+          <h1  class="font-bold text-3xl text-[#111111]">Health Care</h1>
           <p class="text-[#5c5c5c] font-normal text-lg">care center</p>
-          <h2 class="font-bold text-4xl text-[#111111] mt-3">555</h2>
+          <h2 id="health-number" class="font-bold text-4xl text-[#111111] mt-3">555</h2>
           <div class="inline-block bg-[#f2f2f2] px-4 py-2 rounded-full mt-5 font-normal text-base sm:text-lg lg:text-lg">servant</div>
         </div>
         <div class="flex justify-between px-4 mt-7">
-          <button class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
+          <button id="copy-btn-heath" class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
           <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
       </div>
@@ -181,11 +189,11 @@
         <div class="px-3">
           <h1 class="font-bold text-3xl text-[#111111]">Railway Service</h1>
           <p class="text-[#5c5c5c] font-normal text-lg">service</p>
-          <h2 class="font-bold text-4xl text-[#111111] mt-3">333</h2>
+          <h2 id="railway-number" class="font-bold text-4xl text-[#111111] mt-3">333</h2>
           <div class="inline-block bg-[#f2f2f2] px-4 py-2 rounded-full mt-5 font-normal text-base sm:text-lg lg:text-lg">titi</div>
         </div>
         <div class="flex justify-between px-4 mt-7">
-          <button class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
+          <button id="copy-btn-railway" class="btn w-[47%] rounded-xl mb-3 lg:mb-hidden"><i class="fa-solid fa-copy"></i>Copy</button>
           <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
       </div>
