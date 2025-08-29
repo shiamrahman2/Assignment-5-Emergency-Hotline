@@ -113,33 +113,76 @@ document.getElementById("copy-btn-emergency")
 
   // call
 
+//function to make call history
+function callHistory(id1,id2)
+{  
+    const coinValue = parseInt(document.getElementById('coin-value').innerText);
+    if(coinValue>=20)
+    {
+         const serviceName=document.getElementById(id2).innerText;
+        const serviceNumber=document.getElementById(id1).innerText;
+        const date=new Date().toLocaleTimeString();
+        const parentDiv=document.getElementById('call-history')
+      const div = document.createElement("div");
+       div.innerHTML=`
+           <div class="flex bg-[#fafafa] rounded-2xl px-1 py-1 justify-between items-center mt-4 lg:px-6 lg:py-5">
+             <div>
+              <h1 class="font-semibold text-lg text-[#111111] lg:text-2xl">${serviceName}</h1>
+              <h2 class="font-normal text-base text-[#111111] mt-3 lg:text-xl">${serviceNumber}</h2>
+          </div>
+          <div>
+             <h1 class="text-lg font-normal lg:text-3xl">${date}</h1>
+          </div>
+         </div>
+        `;
+    parentDiv.appendChild(div);
+    }
+    else
+    {
+        return;
+    }
+     
+}
+
   document.getElementById('btn-call-ambulance')
     .addEventListener('click', function(){
+         callHistory('ambulance-number','service-ambulance')
         toCall('ambulance-number','service-ambulance', this);
+           
     });
 
 document.getElementById('btn-call-emergency')
     .addEventListener('click', function(){
+         callHistory('emergency-number','service-emergency');
         toCall('emergency-number','service-emergency', this);
+       
     });
 
 document.getElementById('btn-call-fire')
     .addEventListener('click', function(){
+        callHistory('fire-service-number','service-fire');
         toCall('fire-service-number','service-fire', this);
+        
     });
 
 document.getElementById('btn-call-police')
     .addEventListener('click', function(){
+        callHistory('police-number','service-police');
         toCall('police-number','service-police', this);
+        
     });
 
 document.getElementById('btn-call-health')
     .addEventListener('click', function(){
+        callHistory('health-number','service-health');
         toCall('health-number','service-health', this);
+        
     });
 
 document.getElementById('btn-call-railway')
     .addEventListener('click', function(){
+         callHistory('railway-number','service-railway');
         toCall('railway-number','service-railway', this);
+       
     });
 
