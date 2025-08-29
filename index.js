@@ -186,3 +186,11 @@ document.getElementById('btn-call-railway')
        
     });
 
+// clear function
+document.getElementById('clear-btn')
+     .addEventListener('click',function(){
+        alert('Delete All Call History');
+        const allHistoryDiv=document.getElementById('call-history');
+        allHistoryDiv.innerText='';
+     })
+
