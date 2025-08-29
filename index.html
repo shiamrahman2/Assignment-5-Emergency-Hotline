@@ -30,8 +30,8 @@
             </div>
             <div class="flex gap-4 lg:gap-8">
                 <div class="flex gap-2 rounded-full bg-[#41ff6b1a] p-2 items-center w-[80px] lg:w-[140px] justify-center">
-                    <div class="font-black text-lg">0</div>
-                    <div><img src="./assets/heart.png" alt="" class="max-w-[20px] max-h-[20px] lg:max-w-[30px] lg:max-h-[30px]"></div>
+                    <div class="font-black text-lg"> <span id="heart-icon">0</span></div>
+                    <div ><img src="./assets/heart.png" alt="" class="max-w-[20px] max-h-[20px] lg:max-w-[30px] lg:max-h-[30px]"></div>
                 </div>
                 <div class="flex gap-2 rounded-full bg-[#41ff6b1a] p-2 items-center w-[80px] lg:w-[140px] justify-center">
                     <div class="font-black text-lg">100</div>
@@ -56,13 +56,13 @@
      <section class="card-all bg-[#f5fff6]">
   <div class="grid grid-cols-2 gap-3 h-screen p-3 lg:grid-cols-4 lg:gap-8 lg:p-10">
     <div class="col-span-1 grid grid-cols-1 gap-4 lg:col-span-3 lg:grid-cols-3 ">
-      <div class="border border-gray-300 bg-white rounded-2xl lg:max-h-[370px] ">
+      <div class="border border-gray-300 bg-white rounded-2xl lg:max-h-[370px] shadow-xl/20 ">
         <div class="flex justify-between p-4">
           <div>
             <img src="./assets/ambulance.png" class="max-w-[32px] max-h-[32px]" alt="">
           </div>
           <div>
-            <p class="p-2 inline-block rounded-full bg-white">
+            <p id="ambulance-heart" class="p-2 inline-block rounded-full bg-white">
               <i class="fa-regular fa-heart text-gray-500"></i>
             </p>
           </div>
@@ -79,13 +79,13 @@
         </div>
       </div>
 
-      <div class="border border-gray-300 bg-white rounded-2xl lg:max-h-[370px] ">
+      <div class="shadow-xl/20 border border-gray-300 bg-white rounded-2xl lg:max-h-[370px] ">
         <div class="flex justify-between p-4">
           <div>
             <img src="./assets/emergency.png" class="max-w-[32px] max-h-[32px]" alt="">
           </div>
           <div>
-            <p class="p-2 inline-block rounded-full bg-white">
+            <p id="emergency-heart" class="p-2 inline-block rounded-full bg-white">
               <i class="fa-regular fa-heart text-gray-500"></i>
             </p>
           </div>
@@ -101,13 +101,13 @@
           <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
       </div>
-     <div class="border border-gray-300 bg-white rounded-2xl lg:max-h-[370px] ">
+     <div class="shadow-xl/20 border border-gray-300 bg-white rounded-2xl lg:max-h-[370px] ">
         <div class="flex justify-between p-4">
           <div>
             <img src="./assets/fire-service.png" class="max-w-[32px] max-h-[32px]" alt="">
           </div>
           <div>
-            <p class="p-2 inline-block rounded-full bg-white">
+            <p id="fire-service-heart" class="p-2 inline-block rounded-full bg-white">
               <i class="fa-regular fa-heart text-gray-500"></i>
             </p>
           </div>
@@ -123,13 +123,13 @@
           <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
       </div>
-      <div class="border border-gray-300 bg-white rounded-2xl lg:max-h-[370px]">
+      <div class="shadow-xl/20 border border-gray-300 bg-white rounded-2xl lg:max-h-[370px]">
         <div class="flex justify-between p-4">
           <div>
             <img src="./assets/police.png" class="max-w-[32px] max-h-[32px]" alt="">
           </div>
           <div>
-            <p class="p-2 inline-block rounded-full bg-white">
+            <p id="police-heartless" class="p-2 inline-block rounded-full bg-white">
               <i class="fa-regular fa-heart text-gray-500"></i>
             </p>
           </div>
@@ -145,13 +145,13 @@
           <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
       </div>
-      <div class="border border-gray-300 bg-white rounded-2xl lg:max-h-[370px]">
+      <div class="shadow-xl/20 border border-gray-300 bg-white rounded-2xl lg:max-h-[370px]">
         <div class="flex justify-between p-4">
           <div>
             <img src="./assets/brac.png" class="max-w-[32px] max-h-[32px]" alt="">
           </div>
           <div>
-            <p class="p-2 inline-block rounded-full bg-white">
+            <p id="brac-heart" class="p-2 inline-block rounded-full bg-white">
               <i class="fa-regular fa-heart text-gray-500"></i>
             </p>
           </div>
@@ -167,13 +167,13 @@
           <button class="btn w-[47%] bg-green-600 rounded-xl lg:mb-hidden"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
       </div>
-      <div class="border border-gray-300 bg-white rounded-2xl lg:max-h-[370px]">
+      <div class="shadow-xl/20 border border-gray-300 bg-white rounded-2xl lg:max-h-[370px]">
         <div class="flex justify-between p-4">
           <div>
             <img src="./assets/Bangladesh-Railway.png" class="max-w-[32px] max-h-[32px]" alt="">
           </div>
           <div>
-            <p class="p-2 inline-block rounded-full bg-white">
+            <p id="railway-heart" class="p-2 inline-block rounded-full bg-white">
               <i class="fa-regular fa-heart text-gray-500"></i>
             </p>
           </div>
@@ -191,7 +191,7 @@
       </div>
     </div>
     
-    <div class="bg-white rounded-lg p-4 shadow flex flex-col">
+    <div class= "shadow-xl/20 bg-white rounded-lg p-4 shadow flex flex-col">
       <div class="flex flex-col justify-between lg:flex-row ">
         <div class="flex items-center gap-4">
           <p><i class="fa-solid fa-clock text-gray-500"></i></p>
@@ -201,10 +201,14 @@
           <h3 class="text-white bg-[#00a63e] px-6 py-5 text-xl rounded-full font-semibold">Clear</h3>
         </div>
       </div>
-      <div class="call-history mt-4"></div>
+      <div class="call-history mt-4">
+
+      </div>
     </div>
     
   </div>
 </section>
+<script src="./index.js">
+</script>
 </body>
 </html>
